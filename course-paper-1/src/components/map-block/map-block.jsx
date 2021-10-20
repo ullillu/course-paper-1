@@ -1,21 +1,26 @@
-import { Map, Placemark, Polygon, YMaps } from "react-yandex-maps";
-import { districts, districtPoints } from "./index";
+import { Map, Placemark, Polygon, YMaps, Clusterer } from "react-yandex-maps";
+import { districts, districtsPoints } from "./index";
 
 import "./map-block-style.css";
 
+const mapProps = {
+    defaultState: {
+        center: [45.06, 39.02],
+        zoom: 11
+    },
+    height:  600,
+    width: '100%',
+};
 
 export const MapBlock = () => {
     return (
         <div className="map-block">
             <YMaps>
-                <div className="map-block__title">map</div>
-                <Map defaultState={{ center: [45.03, 39.0], zoom: 13 }}
-                    height={ 600 }
-                    width={ 900 }>
+                <Map {...mapProps} >
                     {
-                        districts.map( (district, index) =>
+                        districts.map( (district) =>
                             <Polygon
-                                key={ index }
+                                key={ district.index }
                                 geometry={[
                                     district.coords
                                 ]}
@@ -25,23 +30,42 @@ export const MapBlock = () => {
                                     strokeWidth: 3,
                                     opacity: 0.8,
                                 }}
+                                properties={{
+                                    hintContent: district.hintContent,
+                                }}
+                                modules={
+                                    ['geoObject.addon.balloon', 'geoObject.addon.hint']
+                                }
                             />
                         )
                     }
-                    {
-                        districtPoints.map( (point, index) =>
-                            <Placemark
-                                key={ index }
-                                geometry = {point.coords}
-                                options = {{
-                                    preset: point.preset
-                                }}
-                                properties = {{
-                                    iconCaption: point.name
-                                }}
-                            />
-                        )
-                    }
+
+                    <Clusterer
+                        options={{
+                            preset: 'islands#invertedBlueClusterIcons',
+                            groupByCoordinates: false,
+                        }}
+                    >
+                        {
+                            districtsPoints.map( (preschool) =>
+                                <Placemark
+                                    key={ preschool.index }
+                                    geometry={
+                                        preschool.coords
+                                    }
+                                    options={{
+                                        preset: preschool.preset
+                                    }}
+                                    properties={{
+                                        hintContent: preschool.hintContent,
+                                    }}
+                                    modules={
+                                        ['geoObject.addon.balloon', 'geoObject.addon.hint']
+                                    }
+                                />
+                            )
+                        }
+                    </Clusterer>
                 </Map>
             </YMaps>
         </div>
