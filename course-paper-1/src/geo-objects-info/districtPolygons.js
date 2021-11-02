@@ -1,6 +1,6 @@
 export const districtPolygons = [{
     "type": "Feature",
-    "id": "189400521",
+    "id": 108,
     "properties": {"name": "Черемушки (ЧМР)", "description": "", "iconContent": "", "iconCaption": ""},
     "geometry": {
         "type": "Polygon",
@@ -16,7 +16,7 @@ export const districtPolygons = [{
 },
     {
         "type": "Feature",
-        "id": "189411793",
+        "id": 101,
         "properties": {"name": "Теплоэлектростанция (ТЭЦ)", "description": "", "iconContent": "", "iconCaption": ""},
         "geometry": {
             "type": "Polygon",
@@ -31,7 +31,7 @@ export const districtPolygons = [{
         }
     }, {
         "type": "Feature",
-        "id": "189466199",
+        "id": 104,
         "properties": {
             "name": "Хлопчато-бумажный комбинат (ХБК)",
             "description": "",
@@ -51,7 +51,8 @@ export const districtPolygons = [{
         }
     },
     {
-        "type": "Feature", "id": "189489220",
+        "type": "Feature",
+        "id": 72,
         "properties": {
             "name": "Камвольно-суконный комбинат (КСК)",
             "description": "",
@@ -71,7 +72,8 @@ export const districtPolygons = [{
         }
     },
     {
-        "type": "Feature", "id": "189497120",
+        "type": "Feature",
+        "id": 69,
         "properties": {"name": "Комсомольский (КМР)", "description": "", "iconContent": "", "iconCaption": ""},
         "geometry": {
             "type": "Polygon",
@@ -86,7 +88,8 @@ export const districtPolygons = [{
         }
     },
     {
-        "type": "Feature", "id": "189525971",
+        "type": "Feature",
+        "id": 0,
         "properties": {"name": "Новознаменский", "description": "", "iconContent": "", "iconCaption": ""},
         "geometry": {
             "type": "Polygon",
@@ -102,7 +105,7 @@ export const districtPolygons = [{
     },
     {
         "type": "Feature",
-        "id": "189534434",
+        "id": 62,
         "properties": {"name": "Гидростроителей  (ГМР)", "description": "", "iconContent": "", "iconCaption": ""},
         "geometry": {
             "type": "Polygon",
@@ -117,7 +120,8 @@ export const districtPolygons = [{
         }
     },
     {
-        "type": "Feature", "id": "189568703",
+        "type": "Feature",
+        "id": 76,
         "properties": {"name": "Пашковский (ПМР)", "description": "", "iconContent": "", "iconCaption": ""},
         "geometry": {
             "type": "Polygon",
@@ -133,7 +137,7 @@ export const districtPolygons = [{
     },
     {
         "type": "Feature",
-        "id": "189604360",
+        "id": 0,
         "properties": {"name": "Школьный (ШМР)", "description": "", "iconContent": "", "iconCaption": ""},
         "geometry": {
             "type": "Polygon",
@@ -148,7 +152,8 @@ export const districtPolygons = [{
         }
     },
     {
-        "type": "Feature", "id": "189680244",
+        "type": "Feature",
+        "id": 100,
         "properties": {"name": "Табачная фабрика", "description": "", "iconContent": "", "iconCaption": ""},
         "geometry": {
             "type": "Polygon",
@@ -163,7 +168,8 @@ export const districtPolygons = [{
         }
     },
     {
-        "type": "Feature", "id": "189863610",
+        "type": "Feature",
+        "id": 65,
         "properties": {
             "name": "Завод измерительных приборов (ЗИП)",
             "description": "",
@@ -184,7 +190,7 @@ export const districtPolygons = [{
     },
     {
         "type": "Feature",
-        "id": "189864820",
+        "id": 58,
         "properties": {"name": "40 лет Победы", "description": "", "iconContent": "", "iconCaption": ""},
         "geometry": {
             "type": "Polygon",
@@ -199,7 +205,7 @@ export const districtPolygons = [{
         }
     }, {
         "type": "Feature",
-        "id": "189873973",
+        "id": 70,
         "properties": {"name": "Кожевенный завод", "description": "", "iconContent": "", "iconCaption": ""},
         "geometry": {
             "type": "Polygon",
@@ -214,7 +220,7 @@ export const districtPolygons = [{
         }
     }, {
         "type": "Feature",
-        "id": "189875364",
+        "id": 111,
         "properties": {"name": "Юбилейный (ЮМР)", "description": "", "iconContent": "", "iconCaption": ""},
         "geometry": {
             "type": "Polygon",
@@ -229,7 +235,7 @@ export const districtPolygons = [{
         }
     }, {
         "type": "Feature",
-        "id": "189893363",
+        "id": 99,
         "properties": {
             "name": "Сельскохозяйственный институт (СХИ)",
             "description": "",
@@ -249,7 +255,7 @@ export const districtPolygons = [{
         }
     }, {
         "type": "Feature",
-        "id": "189902263",
+        "id": 0,
         "properties": {"name": "Микрохирургия глаза (МХГ)", "description": "", "iconContent": "", "iconCaption": ""},
         "geometry": {
             "type": "Polygon",
@@ -264,7 +270,7 @@ export const districtPolygons = [{
         }
     }, {
         "type": "Feature",
-        "id": "189905906",
+        "id": 107,
         "properties": {"name": "Центральный (ЦМР)", "description": "", "iconContent": "", "iconCaption": ""},
         "geometry": {
             "type": "Polygon",
@@ -279,7 +285,7 @@ export const districtPolygons = [{
         }
     }, {
         "type": "Feature",
-        "id": "189906101",
+        "id": 95,
         "properties": {"name": "Славянский (СМР)", "description": "", "iconContent": "", "iconCaption": ""},
         "geometry": {
             "type": "Polygon",
@@ -294,7 +300,7 @@ export const districtPolygons = [{
         }
     }, {
         "type": "Feature",
-        "id": "189906102",
+        "id": 103,
         "properties": {"name": "Фестивальный (ФМР)", "description": "", "iconContent": "", "iconCaption": ""},
         "geometry": {
             "type": "Polygon",
@@ -309,7 +315,7 @@ export const districtPolygons = [{
         }
     }, {
         "type": "Feature",
-        "id": "189957429",
+        "id": 0,
         "properties": {"name": "Западный обход", "description": "", "iconContent": "", "iconCaption": ""},
         "geometry": {
             "type": "Polygon",
@@ -324,7 +330,7 @@ export const districtPolygons = [{
         }
     }, {
         "type": "Feature",
-        "id": "190033470",
+        "id": 0,
         "properties": {"name": "Авиагородок", "description": "", "iconContent": "", "iconCaption": ""},
         "geometry": {
             "type": "Polygon",
@@ -356,7 +362,7 @@ export const districtPolygons = [{
     // },
     {
         "type": "Feature",
-        "id": "190070080",
+        "id": 68,
         "properties": {
             "name": "Краевая клиническая больница (ККБ)",
             "description": "",
@@ -376,7 +382,7 @@ export const districtPolygons = [{
         }
     }, {
         "type": "Feature",
-        "id": "190175540",
+        "id": 0,
         "properties": {
             "name": "Завод радиоизмерительных приборов (РИП)",
             "description": "",
@@ -396,22 +402,7 @@ export const districtPolygons = [{
         }
     }, {
         "type": "Feature",
-        "id": "190183993",
-        "properties": {"name": "Краснодарский п.", "description": "", "iconContent": "", "iconCaption": ""},
-        "geometry": {
-            "type": "Polygon",
-            "coordinates": [[39.04000267355026, 45.08859861361631], [39.04440686075276, 45.088649914469215], [39.044404178543665, 45.08791459710928], [39.04706895319992, 45.08791744719065], [39.047026708407984, 45.084450211522174], [39.046023529127446, 45.08285808133372], [39.044528924080296, 45.08283919785489], [39.044517373524585, 45.081893886252985], [39.03935688828433, 45.0818820393744], [39.03939837647272, 45.085136645218675], [39.04001758661932, 45.08513854542695], [39.04000267355026, 45.08859861361631]]
-        },
-        "options": {
-            "zIndex": 100000024,
-            "order": 100000024,
-            "fillColor": "59595933",
-            "strokeColor": "595959b3",
-            "strokeWidth": 3
-        }
-    }, {
-        "type": "Feature",
-        "id": "190197962",
+        "id": 0,
         "properties": {"name": "Энка (Жукова, ЖМР)", "description": "", "iconContent": "", "iconCaption": ""},
         "geometry": {
             "type": "Polygon",
@@ -426,7 +417,7 @@ export const districtPolygons = [{
         }
     }, {
         "type": "Feature",
-        "id": "190201083",
+        "id": 79,
         "properties": {"name": "Витаминкомбинат (ВМР)", "description": "", "iconContent": "", "iconCaption": ""},
         "geometry": {
             "type": "Polygon",
@@ -441,7 +432,7 @@ export const districtPolygons = [{
         }
     }, {
         "type": "Feature",
-        "id": "190292600",
+        "id": 75,
         "properties": {"name": "Европея (Немецкая деревня)", "description": "", "iconContent": "", "iconCaption": ""},
         "geometry": {
             "type": "Polygon",
@@ -456,7 +447,7 @@ export const districtPolygons = [{
         }
     }, {
         "type": "Feature",
-        "id": "190294430",
+        "id": 0,
         "properties": {"name": "9-й км", "description": "", "iconContent": "", "iconCaption": ""},
         "geometry": {
             "type": "Polygon",
@@ -471,7 +462,7 @@ export const districtPolygons = [{
         }
     }, {
         "type": "Feature",
-        "id": "190294931",
+        "id": 94,
         "properties": {"name": "Северный", "description": "", "iconContent": "", "iconCaption": ""},
         "geometry": {
             "type": "Polygon",
@@ -486,7 +477,7 @@ export const districtPolygons = [{
         }
     }, {
         "type": "Feature",
-        "id": "190303833",
+        "id": 71,
         "properties": {"name": "Красная площадь (Горхутор)", "description": "", "iconContent": "", "iconCaption": ""},
         "geometry": {
             "type": "Polygon",
@@ -501,7 +492,7 @@ export const districtPolygons = [{
         }
     }, {
         "type": "Feature",
-        "id": "190304342",
+        "id": 0,
         "properties": {"name": "Краснодарский п.", "description": "", "iconContent": "", "iconCaption": ""},
         "geometry": {
             "type": "Polygon",
@@ -514,24 +505,9 @@ export const districtPolygons = [{
             "strokeColor": "595959b3",
             "strokeWidth": 3
         }
-    }, {
+    },  {
         "type": "Feature",
-        "id": "190304516",
-        "properties": {"name": "Российский п.", "description": "", "iconContent": "", "iconCaption": ""},
-        "geometry": {
-            "type": "Polygon",
-            "coordinates": [[39.018476829822816, 45.114447669899235], [39.02054481297329, 45.11452509173358], [39.02034621898962, 45.116253669593924], [39.02396172622519, 45.11643467691153], [39.023934904135004, 45.1172005438709], [39.0273047511191, 45.117232799035655], [39.02725865733494, 45.11794341357318], [39.02691529015557, 45.11804131958494], [39.02686042355588, 45.11899421156858], [39.028475212828184, 45.11900634404982], [39.028584798704316, 45.116018532779265], [39.03325784525601, 45.11617317447791], [39.03312437325313, 45.12335597053211], [39.04107141170079, 45.12343241181521], [39.041614621941065, 45.131816664913195], [39.05220033433178, 45.12660453676771], [39.063886716086756, 45.11648999673537], [39.04399725477398, 45.116424245115354], [39.04406860550142, 45.112082268608184], [39.02655173574936, 45.112077620997795], [39.02652893697279, 45.11141510128811], [39.02353827392136, 45.111399290641955], [39.01862166910948, 45.11104615656666], [39.018476829822816, 45.114447669899235]]
-        },
-        "options": {
-            "zIndex": 100000032,
-            "order": 100000032,
-            "fillColor": "59595933",
-            "strokeColor": "595959b3",
-            "strokeWidth": 3
-        }
-    }, {
-        "type": "Feature",
-        "id": "190304650",
+        "id": 0,
         "properties": {"name": "Российский п.", "description": "", "iconContent": "", "iconCaption": ""},
         "geometry": {
             "type": "Polygon",

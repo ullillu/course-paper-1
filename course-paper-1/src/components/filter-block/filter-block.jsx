@@ -1,24 +1,24 @@
 import { Checkbox } from "./checkbox";
 import { Button } from "./button";
-import { checkboxes } from "./checkboxesInfo";
 import './filter-block-style.css';
 
-export const FilterBlock = () => {
+export const FilterBlock = ({ filter, onChange }) => {
     return (
         <div className={"filter-block-wrapper"}>
             <div className={ "filter-block" }>
                 {
-                    checkboxes.map( (c, index) =>
+                    filter.map( (checkbox, index) =>
                         <Checkbox
-                            index={ index }
-                            title={ c.title }
-                            name={ c.name }
-                            onChange={ ()=>{} }
+                            key={ index }
+                            title={ checkbox.title }
+                            name={ checkbox.name }
+                            value={ checkbox.isShown }
+                            onChange={ onChange }
                         />
                     )
                 }
             </div>
-           <Button className={ "filter-block__button" } name={ "Применить" }  onClick={ ()=>{} }/>
+           <Button style={ "filter-block__button" } name={ "Применить" } />
         </div>
     )
 }

@@ -1,6 +1,7 @@
 import { districtPolygons } from "../../geo-objects-info/districtPolygons";
-import { preschoolObjects } from "../../geo-objects-info/preschoolPoints";
 import { districtPoints } from "../../geo-objects-info/districtPoints";
+import {preschoolObjects} from "../../geo-objects-info/preschoolObjects";
+
 
 export const districts = districtPolygons.map( district  => {
     return {
@@ -12,7 +13,6 @@ export const districts = districtPolygons.map( district  => {
     }
 })
 
-
 export const districtsPoints = districtPoints.map( point => {
     return {
         index: point.id,
@@ -22,13 +22,14 @@ export const districtsPoints = districtPoints.map( point => {
     }
 })
 
-export const preschools = preschoolObjects.map( point => {
-    return {
-        index: point.title,
-        coords: point.coordinates.point,
-        preset: 'islands#blueFamilyIcon',
-        hintContent: point.title,
-    }
+
+
+const preschoolsDistricts = new Set();
+
+preschoolObjects.map( obj => {
+    preschoolsDistricts.add(obj.address_region.title)
 })
 
-console.log(preschools.length)
+
+
+
