@@ -1,22 +1,21 @@
-import { Map, Placemark, Polygon, YMaps, Clusterer } from "react-yandex-maps";
-import { districts }  from "./index";
+import { Map, Polygon, YMaps, ListBox, ListBoxItem, ObjectManager } from "react-yandex-maps";
 
 import "./map-block-style.css";
-import {useEffect, useState} from "react";
-import {parkObjects} from "../../geo-objects-info/parkObjects";
-import {preschoolObjects} from "../../geo-objects-info/preschoolObjects";
-
 
 const mapProps = {
     defaultState: {
         center: [45.06, 39.02],
-        zoom: 11
+        zoom: 12
     },
-    height:  600,
+    height:  800,
     width: '100%',
+    modules: [
+        'templateLayoutFactory',
+        'layout.PieChart'
+    ]
 };
 
-export const MapBlock = ({ isFetching, objects }) => {
+export const MapBlock = ({ isFetching, districts, objects, onSelect, filter, objectManagerFilter }) => {
 
     return (
         <div className="map-block">
@@ -25,58 +24,63 @@ export const MapBlock = ({ isFetching, objects }) => {
                 <YMaps>
                     <Map { ...mapProps } >
                         {
-                            districts.map( (district) =>
-                                <Polygon
-                                    key={ district.index }
-                                    geometry={[
-                                        district.coords
-                                    ]}
-                                    options={{
-                                        fillColor: district.fillColor,
-                                        strokeColor: district.strokeColor,
-                                        strokeWidth: 3,
-                                        opacity: 0.8,
-                                    }}
-                                    properties={{
-                                        hintContent: district.hintContent,
-                                    }}
-                                    modules={
-                                        ['geoObject.addon.balloon', 'geoObject.addon.hint']
-                                    }
-                                />
-                            )
-                        }
-
-                        {/*<Clusterer*/}
-                        {/*    options={{*/}
-                        {/*        preset: 'islands#invertedBlueClusterIcons',*/}
-                        {/*        groupByCoordinates: false,*/}
-                        {/*    }}*/}
-                        {/*>*/}
-                            {
-                                objects.map( (obj) =>
-                                    <Placemark
-                                        key={ obj.index }
-                                        geometry={
-                                            obj.coords
-                                        }
+                            districts.map( (district) => {
+                                return (
+                                    <Polygon
+                                        key={district.id}
+                                        geometry={[
+                                            district.geometry.coordinates
+                                        ]}
                                         options={{
-                                            preset: obj.preset
+                                            fillColor: district.options.fillColor,
+                                            strokeColor: '#B7B7B7',
+                                            strokeWidth: 3,
+                                            opacity: 0.6,
                                         }}
                                         properties={{
-                                            hintContent: obj.hintContent,
+                                            hintContent: district.properties.name,
                                         }}
                                         modules={
-                                            ['geoObject.addon.balloon', 'geoObject.addon.hint']
+                                            ['geoObject.addon.hint']
                                         }
-                                    />
-                                )
+                                    />)
+                            })
+                        }
+                        <ListBox
+                            data={{ content: 'Фильтр' }}
+                            state={{
+                                expanded: true,
+                            }}
+                        >
+                            {
+                                Object.entries(filter).map( ([key, value]) => {
+                                    return (
+                                        <ListBoxItem data={{ content: key }}
+                                                     state={{ selected: value }}
+                                                     onSelect={ () => onSelect(key) }
+                                                     onDeselect={ () => onSelect(key) }
+                                                     key={ key }
+                                        />
+                                    )})
                             }
-                        {/*</Clusterer>*/}
+                        </ListBox>
+                        <ObjectManager
+                            options={{
+                                clusterize: true,
+                                gridSize: 64,
+                                clusterIconLayout: 'default#pieChart'
+
+                            }}
+                            filter={ objectManagerFilter }
+                            features={ objects }
+                            modules={[
+                                'objectManager.addon.objectsHint',
+                            ]}
+
+                        />
                     </Map>
                 </YMaps>
             }
-
         </div>
     );
 }
