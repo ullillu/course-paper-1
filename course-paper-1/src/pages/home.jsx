@@ -3,20 +3,21 @@ import { useEffect, useState } from "react";
 import { filterInfo } from "../components/map-block";
 import axios from "axios";
 
-import district from "../geo-objects-info/districts.json";
+import district from "../geo-objects-info/districts.json"
+import { useNavigate } from "react-router-dom";
 
 export const Home = () => {
     const [filter, setFilter] = useState( filterInfo );
     const [isFetching, setIsFetching] = useState(true);
     const [objects, setObjects] = useState({});
     const [districts, setDistricts] = useState(district)
-    const [objectManagerFilter, setObjectManagerFilter] = useState(() => (object) => true)
+    const [objectManagerFilter, setObjectManagerFilter] = useState(() => () => true)
 
     useEffect(() => {
         setIsFetching(true);
         const getObjects = async () => {
             try {
-                const response = await axios.get('https://api.jsonbin.io/v3/b/61824dc14a82881d6c69ee90/latest',
+                const response = await axios.get('https://api.jsonbin.io/v3/b/61856210ad0eb745bd8a3eff/latest',
                     {
                         headers: {
                             'X-Master-Key': '$2b$10$AWIF1wPhgs5.Zq3CswguneGsUKTzsgXOgIlcIdbDl5E6/Cda6ck..',
@@ -37,7 +38,7 @@ export const Home = () => {
     //     setIsFetching(true);
     //     const getDistricts = async () => {
     //         try {
-    //             const response = await axios.get('https://api.jsonbin.io/v3/b/61841688e2e54354997fd1ad/latest',
+    //             const response = await axios.get('https://api.jsonbin.io/v3/b/618561c53ea6754ce134d134/latest',
     //                 {
     //                     headers: {
     //                         'X-Master-Key': '$2b$10$AWIF1wPhgs5.Zq3CswguneGsUKTzsgXOgIlcIdbDl5E6/Cda6ck..',
@@ -58,6 +59,7 @@ export const Home = () => {
         let filterTemp = filter;
         filterTemp[title]= !filterTemp[title];
         setFilter(filterTemp);
+
         makeHeatMap();
 
         setObjectManagerFilter( () => (object) => {
@@ -69,7 +71,7 @@ export const Home = () => {
         let total = Object.keys(filter).reduce( (total, current) => {
             return filter[current] ? total + 1 : total;
         }, 0);
-        districts.forEach( (obj, index, objects) => {
+        districts.forEach( (obj) => {
             let content = obj.properties.content;
             let result = Object.keys(content).reduce( (total, current) => {
                 return content[current] && filter[current] ? total + 1 : total;
@@ -93,8 +95,13 @@ export const Home = () => {
         setDistricts(districts);
     }
 
+    const navigate = useNavigate();
+    const onPolygonClick = (url) => {
+        console.log(url)
+        navigate(url);
+    }
+
     return (
-        <>
             <MapBlock
                 isFetching={ isFetching }
                 filter={ filter }
@@ -102,7 +109,7 @@ export const Home = () => {
                 objects={ objects }
                 onSelect={ onSelect }
                 objectManagerFilter={ objectManagerFilter }
+                onPolygonClick={ onPolygonClick }
             />
-        </>
     )
 }

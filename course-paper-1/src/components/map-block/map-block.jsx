@@ -1,83 +1,23 @@
-import { Map, Polygon, YMaps, ListBox, ListBoxItem, ObjectManager } from "react-yandex-maps";
+import { Map, YMaps } from "react-yandex-maps";
+
+import PolygonsContainer from "./polygons-container";
+import ListBoxContainer from "./list-box-container";
+import ObjectManagerContainer from "./object-manager-container";
 
 import "./map-block-style.css";
+import { mapProps } from "./index";
 
-const mapProps = {
-    defaultState: {
-        center: [45.06, 39.02],
-        zoom: 12
-    },
-    height:  800,
-    width: '100%',
-    modules: [
-        'templateLayoutFactory',
-        'layout.PieChart'
-    ]
-};
-
-export const MapBlock = ({ isFetching, districts, objects, onSelect, filter, objectManagerFilter }) => {
+export const MapBlock = ( props ) => {
 
     return (
         <div className="map-block">
             {
-                !isFetching &&
+                !props.isFetching &&
                 <YMaps>
                     <Map { ...mapProps } >
-                        {
-                            districts.map( (district) => {
-                                return (
-                                    <Polygon
-                                        key={district.id}
-                                        geometry={[
-                                            district.geometry.coordinates
-                                        ]}
-                                        options={{
-                                            fillColor: district.options.fillColor,
-                                            strokeColor: '#B7B7B7',
-                                            strokeWidth: 3,
-                                            opacity: 0.6,
-                                        }}
-                                        properties={{
-                                            hintContent: district.properties.name,
-                                        }}
-                                        modules={
-                                            ['geoObject.addon.hint']
-                                        }
-                                    />)
-                            })
-                        }
-                        <ListBox
-                            data={{ content: 'Фильтр' }}
-                            state={{
-                                expanded: true,
-                            }}
-                        >
-                            {
-                                Object.entries(filter).map( ([key, value]) => {
-                                    return (
-                                        <ListBoxItem data={{ content: key }}
-                                                     state={{ selected: value }}
-                                                     onSelect={ () => onSelect(key) }
-                                                     onDeselect={ () => onSelect(key) }
-                                                     key={ key }
-                                        />
-                                    )})
-                            }
-                        </ListBox>
-                        <ObjectManager
-                            options={{
-                                clusterize: true,
-                                gridSize: 64,
-                                clusterIconLayout: 'default#pieChart'
-
-                            }}
-                            filter={ objectManagerFilter }
-                            features={ objects }
-                            modules={[
-                                'objectManager.addon.objectsHint',
-                            ]}
-
-                        />
+                        <PolygonsContainer districts={ props.districts } onPolygonClick={ props.onPolygonClick }/>
+                        <ListBoxContainer filter={ props.filter } onSelect={ props.onSelect }/>
+                        <ObjectManagerContainer objects={ props.objects } objectManagerFilter={ props.objectManagerFilter }/>
                     </Map>
                 </YMaps>
             }
