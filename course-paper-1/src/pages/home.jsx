@@ -3,15 +3,23 @@ import { useEffect, useState } from "react";
 import { filterInfo } from "../components/map-block";
 import axios from "axios";
 
-import district from "../geo-objects-info/districts.json"
 import { useNavigate } from "react-router-dom";
 
-export const Home = () => {
+// import geojson from '../geo-objects-info/geojson.json';
+import WelcomeBlock from "../components/welcome-block/welcome-block";
+import HowToUseBlock from "../components/how-to-use-block/how-to-use-block";
+import AboutUsBlock from "../components/about-us-block/about-us-block";
+
+export const Home = ( props ) => {
     const [filter, setFilter] = useState( filterInfo );
+    const [districts, setDistricts] = useState( [] );
     const [isFetching, setIsFetching] = useState(true);
     const [objects, setObjects] = useState({});
-    const [districts, setDistricts] = useState(district)
-    const [objectManagerFilter, setObjectManagerFilter] = useState(() => () => true)
+    const [objectManagerFilter, setObjectManagerFilter] = useState(() => () => true);
+
+    useEffect( () => {
+        setDistricts(props.districts)
+    }, [props.districts])
 
     useEffect(() => {
         setIsFetching(true);
@@ -31,29 +39,7 @@ export const Home = () => {
         };
         getObjects();
         setIsFetching(false);
-
-    }, [])
-
-    // useEffect(() => {
-    //     setIsFetching(true);
-    //     const getDistricts = async () => {
-    //         try {
-    //             const response = await axios.get('https://api.jsonbin.io/v3/b/618561c53ea6754ce134d134/latest',
-    //                 {
-    //                     headers: {
-    //                         'X-Master-Key': '$2b$10$AWIF1wPhgs5.Zq3CswguneGsUKTzsgXOgIlcIdbDl5E6/Cda6ck..',
-    //                         'X-Bin-Meta': 'false'
-    //                     }})
-    //             setDistricts(response.data)
-    //             console.log(response.data)
-    //         } catch (error) {
-    //             console.error(error)
-    //         }
-    //     };
-    //     getDistricts();
-    //     setIsFetching(false);
-    //
-    // }, [])
+    }, []);
 
     const onSelect = (title) => {
         let filterTemp = filter;
@@ -63,7 +49,7 @@ export const Home = () => {
         makeHeatMap();
 
         setObjectManagerFilter( () => (object) => {
-            return filter[object.properties.content]
+            return filter[object.properties.content];
         });
     }
 
@@ -97,19 +83,26 @@ export const Home = () => {
 
     const navigate = useNavigate();
     const onPolygonClick = (url) => {
-        console.log(url)
+        console.log(url);
         navigate(url);
     }
 
     return (
-            <MapBlock
-                isFetching={ isFetching }
-                filter={ filter }
-                districts={ districts }
-                objects={ objects }
-                onSelect={ onSelect }
-                objectManagerFilter={ objectManagerFilter }
-                onPolygonClick={ onPolygonClick }
-            />
+        <>
+            <WelcomeBlock/>
+            <AboutUsBlock/>
+            <HowToUseBlock/>
+            {
+                !isFetching &&
+                <MapBlock
+                    filter={ filter }
+                    districts={ districts }
+                    objects={ objects }
+                    onSelect={ onSelect }
+                    objectManagerFilter={ objectManagerFilter }
+                    onPolygonClick={ onPolygonClick }
+                />
+            }
+        </>
     )
 }

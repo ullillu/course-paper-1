@@ -1,0 +1,43 @@
+.district-page {
+    margin: 100px auto auto;
+    width: 100%;
+}
+
+.district-page__nav__wrapper {
+    background-color: #dabdab;
+    padding: 10px;
+}
+.district-page__nav {
+    margin: auto;
+    width: 100%;
+    max-width: 800px;
+}
+
+.district-page__link {
+    text-decoration: none;
+    color: black;
+}
+
+.district-page__link:hover {
+    color: dimgray;
+}
+
+.district-page__main__text {
+    margin: auto;
+    width: 100%;
+    max-width: 800px;
+    /*display: grid;*/
+    /*grid-template-columns: 1fr 2fr;*/
+}
+
+.district-page__main__images {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 15px;
+    justify-content: center;
+}
+
+img {
+    object-fit: cover;
+}
+

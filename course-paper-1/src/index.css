@@ -12,8 +12,23 @@ code {
     monospace;
 }
 
-.container {
-  height: 100%;
-  width: 100%;
+h1, p {
+  margin: 0;
 }
+
+
+/*.ymaps-2-1-79-listbox__list-item {*/
+/*  display: flex !important;*/
+/*  align-items: center;*/
+/*  min-height: 20px;*/
+/*}*/
+/*.ymaps-2-1-79-listbox__list-item-text {*/
+/*}*/
+
+/*.park {*/
+/*}*/
+
+/*.ymaps-2-1-79-listbox__list-item::after {*/
+/*  content: url("components/map-block/icons/parks.svg");*/
+/*}*/
 

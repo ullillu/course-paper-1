@@ -12,7 +12,11 @@
                 "Спорт. площадка": true,
                 "Театр": true
             },
-            "url": "/CHMR"
+            "url": "/CHMR",
+            "description": "Черемушки — завершенный микрорайон. Здесь мало свободной земли, пригодной для строительства высотных зданий. В настоящий момент на ЧМР ведется строительство жилых комплексов по ул. Чехова: \"Чистые Пруды\", \"Черемушки\". Кроме того, мелкие частные застройщики ведут активное строительство двух- и трехэтажных многоквартирных домов, выкупая под них небольшие участки в частном секторе. Так как Черемушки старый микрорайон, который строился еще в советское время, здесь есть вся инфраструктура. Множество детских садов школ, магазинов. Здесь расположен Кубанский государственный университет и другие учебные заведения, парк \"Солнечный остров\", магазины, рынки и многое другое.",
+            "pros": "Карасунские озера, набережная реки Кубань, много зелени, трамвай.",
+            "cons": "большой поток транспорта, промышленные предприятия, множество хрущевок и большой частный сектор.",
+            "images": ["https://dvnak.ru/upload/000/u1/42/8b/14299861283000august.jpg", "https://dvnak.ru/upload/007/u787/d9/2e/krasnodar-chmr-mikro-raion-cheremushki-zhk-chistye-prudy.jpg", "https://dvnak.ru/upload/007/u787/3f/22/krasnodar-chmr-mikro-raion-cheremushki-zhk-cheremushki.jpg", "https://pikato.ru/upload/iblock/1e7/1e7ac45bdda5ef730e59822ef0524a19.jpg","https://avatars.mds.yandex.net/get-zen_doc/1708265/pub_5f27e004be63e00d2c62e098_5f27e18b9bdd372636f4842e/scale_1200"]
         },
         "geometry": {
             "type": "Polygon",
@@ -340,7 +344,11 @@
                 "Спорт. площадка": false,
                 "Театр": false
             },
-            "url": "/TEC"
+            "url": "/TEC",
+            "description": "",
+            "pros": "",
+            "cons": "",
+            "images": []
         },
         "geometry": {
             "type": "Polygon",
@@ -428,7 +436,11 @@
                 "Спорт. площадка": false,
                 "Театр": true
             },
-            "url": "/HBK"
+            "url": "/HBK",
+            "description": "",
+            "pros": "",
+            "cons": "",
+            "images": []
         },
         "geometry": {
             "type": "Polygon",
@@ -508,7 +520,11 @@
                 "Спорт. площадка": false,
                 "Театр": false
             },
-            "url": "/KSK"
+            "url": "/KSK",
+            "description": "",
+            "pros": "",
+            "cons": "",
+            "images": []
         },
         "geometry": {
             "type": "Polygon",
@@ -632,7 +648,11 @@
                 "Спорт. площадка": true,
                 "Театр": false
             },
-            "url": "/KMR"
+            "url": "/KMR",
+            "description": "",
+            "pros": "",
+            "cons": "",
+            "images": []
         },
         "geometry": {
             "type": "Polygon",
@@ -772,7 +792,11 @@
                 "Спорт. площадка": true,
                 "Театр": false
             },
-            "url": "/GMR"
+            "url": "/GMR",
+            "description": "",
+            "pros": "",
+            "cons": "",
+            "images": []
         },
         "geometry": {
             "type": "Polygon",
@@ -972,7 +996,11 @@
                 "Спорт. площадка": true,
                 "Театр": false
             },
-            "url": "/PMR"
+            "url": "/PMR",
+            "description": "",
+            "pros": "",
+            "cons": "",
+            "images": []
         },
         "geometry": {
             "type": "Polygon",
@@ -1300,7 +1328,11 @@
                 "Спорт. площадка": false,
                 "Театр": false
             },
-            "url": "/SHMR"
+            "url": "/SHMR",
+            "description": "",
+            "pros": "",
+            "cons": "",
+            "images": []
         },
         "geometry": {
             "type": "Polygon",
@@ -1408,7 +1440,11 @@
                 "Спорт. площадка": true,
                 "Театр": false
             },
-            "url": "/Tabachka"
+            "url": "/Tabachka",
+            "description": "",
+            "pros": "",
+            "cons": "",
+            "images": []
         },
         "geometry": {
             "type": "Polygon",
@@ -1556,7 +1592,11 @@
                 "Спорт. площадка": true,
                 "Театр": false
             },
-            "url": "/ZIP"
+            "url": "/ZIP",
+            "description": "",
+            "pros": "",
+            "cons": "",
+            "images": []
         },
         "geometry": {
             "type": "Polygon",
@@ -1636,7 +1676,11 @@
                 "Спорт. площадка": false,
                 "Театр": false
             },
-            "url": "/40letPobedy"
+            "url": "/40letPobedy",
+            "description": "",
+            "pros": "",
+            "cons": "",
+            "images": []
         },
         "geometry": {
             "type": "Polygon",
@@ -1772,7 +1816,11 @@
                 "Спорт. площадка": true,
                 "Театр": false
             },
-            "url": "/KozhZavod"
+            "url": "/KozhZavod",
+            "description": "",
+            "pros": "",
+            "cons": "",
+            "images": []
         },
         "geometry": {
             "type": "Polygon",
@@ -1884,7 +1932,11 @@
                 "Спорт. площадка": true,
                 "Театр": false
             },
-            "url": "/UMR"
+            "url": "/UMR",
+            "description": "",
+            "pros": "",
+            "cons": "",
+            "images": []
         },
         "geometry": {
             "type": "Polygon",
@@ -2056,7 +2108,11 @@
                 "Спорт. площадка": false,
                 "Театр": false
             },
-            "url": "/SHI"
+            "url": "/SHI",
+            "description": "",
+            "pros": "",
+            "cons": "",
+            "images": []
         },
         "geometry": {
             "type": "Polygon",
@@ -2176,7 +2232,11 @@
                 "Спорт. площадка": false,
                 "Театр": false
             },
-            "url": "/MHG"
+            "url": "/MHG",
+            "description": "",
+            "pros": "",
+            "cons": "",
+            "images": []
         },
         "geometry": {
             "type": "Polygon",
@@ -2244,7 +2304,11 @@
                 "Спорт. площадка": true,
                 "Театр": true
             },
-            "url": "/CMR"
+            "url": "/CMR",
+            "description": "",
+            "pros": "",
+            "cons": "",
+            "images": []
         },
         "geometry": {
             "type": "Polygon",
@@ -2556,7 +2620,11 @@
                 "Спорт. площадка": true,
                 "Театр": false
             },
-            "url": "/SMR"
+            "url": "/SMR",
+            "description": "",
+            "pros": "",
+            "cons": "",
+            "images": []
         },
         "geometry": {
             "type": "Polygon",
@@ -2672,7 +2740,11 @@
                 "Спорт. площадка": true,
                 "Театр": false
             },
-            "url": "/FMR"
+            "url": "/FMR",
+            "description": "",
+            "pros": "",
+            "cons": "",
+            "images": []
         },
         "geometry": {
             "type": "Polygon",
@@ -2808,7 +2880,11 @@
                 "Спорт. площадка": false,
                 "Театр": false
             },
-            "url": "/Aviagorodok"
+            "url": "/Aviagorodok",
+            "description": "",
+            "pros": "",
+            "cons": "",
+            "images": []
         },
         "geometry": {
             "type": "Polygon",
@@ -2876,7 +2952,11 @@
                 "Спорт. площадка": true,
                 "Театр": false
             },
-            "url": "/KKB"
+            "url": "/KKB",
+            "description": "",
+            "pros": "",
+            "cons": "",
+            "images": []
         },
         "geometry": {
             "type": "Polygon",
@@ -2976,7 +3056,11 @@
                 "Спорт. площадка": true,
                 "Театр": false
             },
-            "url": "/RIP"
+            "url": "/RIP",
+            "description": "",
+            "pros": "",
+            "cons": "",
+            "images": []
         },
         "geometry": {
             "type": "Polygon",
@@ -3096,7 +3180,11 @@
                 "Спорт. площадка": false,
                 "Театр": false
             },
-            "url": "/Enka"
+            "url": "/Enka",
+            "description": "",
+            "pros": "",
+            "cons": "",
+            "images": []
         },
         "geometry": {
             "type": "Polygon",
@@ -3144,7 +3232,11 @@
                 "Спорт. площадка": false,
                 "Театр": false
             },
-            "url": "/VMR"
+            "url": "/VMR",
+            "description": "",
+            "pros": "",
+            "cons": "",
+            "images": []
         },
         "geometry": {
             "type": "Polygon",
@@ -3204,7 +3296,11 @@
                 "Спорт. площадка": false,
                 "Театр": false
             },
-            "url": "/NemetskayaDerevnya"
+            "url": "/NemetskayaDerevnya",
+            "description": "",
+            "pros": "",
+            "cons": "",
+            "images": []
         },
         "geometry": {
             "type": "Polygon",
@@ -3272,7 +3368,11 @@
                 "Спорт. площадка": true,
                 "Театр": false
             },
-            "url": "/9km"
+            "url": "/9km",
+            "description": "",
+            "pros": "",
+            "cons": "",
+            "images": []
         },
         "geometry": {
             "type": "Polygon",
@@ -3328,7 +3428,11 @@
                 "Спорт. площадка": false,
                 "Театр": false
             },
-            "url": "/Severnyi"
+            "url": "/Severnyi",
+            "description": "",
+            "pros": "",
+            "cons": "",
+            "images": []
         },
         "geometry": {
             "type": "Polygon",
@@ -3436,7 +3540,11 @@
                 "Спорт. площадка": false,
                 "Театр": false
             },
-            "url": "/Gorhutor"
+            "url": "/Gorhutor",
+            "description": "",
+            "pros": "",
+            "cons": "",
+            "images": []
         },
         "geometry": {
             "type": "Polygon",

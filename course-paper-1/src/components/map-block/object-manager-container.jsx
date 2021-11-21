@@ -7,7 +7,7 @@ const ObjectManagerContainer = ( props ) => {
             <ObjectManager
                 options={{
                     clusterize: true,
-                    gridSize: 64,
+                    gridSize: 50,
                     clusterIconLayout: 'default#pieChart'
 
                 }}
