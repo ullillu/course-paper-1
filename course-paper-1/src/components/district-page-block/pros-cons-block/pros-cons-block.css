@@ -1,0 +1,39 @@
+.pros-cons-block {
+    min-height: 50vh;
+    background-color: ghostwhite;
+    /*background: linear-gradient( rgba(255,255,255,1) 0%, var(--accent-color) 100%);*/
+    display: flex;
+    flex-direction: column;
+}
+.pros-cons-block header {
+    padding-bottom: 0;
+}
+
+.pros-cons-block__content {
+    height: 100%;
+    padding: 50px;
+    display: flex;
+    justify-content: space-evenly;
+    margin-top: auto;
+    margin-bottom: auto;
+}
+.pros-cons-block__content span:before {
+    padding-right: 10px;
+    transform: scale(2);
+    display: inline-block;
+}
+
+
+.pros-cons-block__content section:first-child span:before {
+    content: "+";
+}
+.pros-cons-block__content section:last-child span:before {
+    content: "-";
+}
+
+.pros-cons-block__content section {
+    font-size: 18px;
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+}

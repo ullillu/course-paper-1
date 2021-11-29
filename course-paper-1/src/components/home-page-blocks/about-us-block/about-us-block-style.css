@@ -68,6 +68,15 @@
 
 }
 
+@media screen and (max-width: 1024px) {
+    .about-us-block {
+        margin: 50px 0;
+    }
+    .about-us-block__text__title {
+        font-size: 30px;
+    }
+}
+
 @media screen and (max-width: 640px) {
     .about-us-block__text__title {
         font-size: 30px;

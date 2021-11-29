@@ -1,0 +1,15 @@
+.infrastructure-block {
+    padding: 0 50px 50px;
+    background-color: ghostwhite;
+
+}
+
+.infrastructure-block section {
+    display: flex;
+    justify-content: center;
+}
+
+.infrastructure-block p {
+    width: 70vw;
+    line-height: 1.7;
+}

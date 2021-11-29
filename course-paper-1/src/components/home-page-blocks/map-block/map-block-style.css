@@ -74,11 +74,11 @@
 /*    transition: transform .15s ease-out;*/
 /*}*/
 
-.map-block__legend-btn__text:after {
-    content: url("./icons/arrow.svg");
-    margin-left: 5px;
-    /*display: inline-block;*/
-}
+/*.map-block__legend-btn__text:after {*/
+/*    content: url("icons/arrow.svg");*/
+/*    margin-left: 5px;*/
+/*    !*display: inline-block;*!*/
+/*}*/
 
 .map-block__legend {
     font-weight: 400;
@@ -99,7 +99,7 @@
 
 @media screen and (max-width: 1024px){
     .map-block__title {
-        font-size: 38px;
+        font-size: 30px;
         margin-top: 30px;
         /*margin-bottom: -20px;*/
     }

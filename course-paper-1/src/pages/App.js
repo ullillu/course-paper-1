@@ -40,18 +40,12 @@ export const App = () => {
                         districts.map( district => {
                             return (
                                 <Route key={ district.id } path={ district.properties.url } element={
-                                    <District title={ district.properties.name }
-                                              description={ district.properties.description }
-                                              pros={ district.properties.pros }
-                                              cons={ district.properties.cons }
-                                              images={ district.properties.images }
-                                    />
+                                    <District district={ district.properties } coordinates={ district.geometry.coordinates }/>
                                 }/>
                             )})
                     }
                 </Routes>
             }
-
         </div>
     )
 };

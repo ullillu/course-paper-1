@@ -15,25 +15,33 @@ const HowToUseBlock = () => {
                     <div className={ "how-to-use-block__step__number" } >
                         1
                     </div>
+                    <h2>выберите категории</h2>
                     <p>
-                        Выберите интересующие вас категории в фильтре слева.
+                        В фильтре слева представлены наиболее востребованные категории.
                     </p>
+                </div>
+                <div className={ "how-to-use-block__step" }>
+                    <div className={ "how-to-use-block__step__line" }></div>
                 </div>
                 <div className={ "how-to-use-block__step" }>
                     <div className={ "how-to-use-block__step__number" } >
                         2
                     </div>
+                    <h2>выберите район</h2>
                     <p>
-                        Тепловая карта подскажет, какие районы больше подходят под ваши параметры -
-                        <br/>чем зеленее цвет, тем больше условий удовлетворено.
+                        Чем зеленее цвет на тепловой карте, тем более подходящий район.
                     </p>
+                </div>
+                <div className={ "how-to-use-block__step" }>
+                    <div className={ "how-to-use-block__step__line" }></div>
                 </div>
                 <div className={ "how-to-use-block__step" }>
                     <div className={ "how-to-use-block__step__number" } >
                         3
                     </div>
+                    <h2>нажмите на него</h2>
                     <p>
-                        Нажмите на понравившийся район, чтобы перейти на страницу его описания.
+                        Так вы перейдете на страницу его описания.
                     </p>
                 </div>
             </section>

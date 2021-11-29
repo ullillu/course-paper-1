@@ -1,0 +1,53 @@
+.district-welcome-block {
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+}
+
+.district-welcome-block aside {
+    display: flex;
+    /*margin-bottom: 50px;*/
+}
+
+.district-welcome-block aside nav{
+    background-color: var(--accent-color);
+    padding: 10px;
+}
+
+.district-welcome-block__link {
+    text-decoration: none;
+    color: black;
+}
+
+.district-welcome-block__link:hover {
+    color: #fff;
+}
+
+/*.district-welcome-block__header {*/
+/*    text-align: center;*/
+/*    margin: 50px 0;*/
+/*}*/
+
+.district-welcome-block__main {
+    display: flex;
+    gap: 50px;
+    padding: 0 50px;
+    height: 100%;
+    align-items: center;
+}
+
+.district-welcome-block__map-wrapper {
+    min-width: 60vw;
+    height: 400px;
+    box-shadow: 0 10px 20px 1px rgba(0,0,0,.2);
+
+}
+
+.district-welcome-block__description {
+    line-height: 1.7;
+}
+
+.district-welcome-block__description h2 {
+    font-size: 24px;
+}
+

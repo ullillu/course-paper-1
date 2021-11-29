@@ -1,0 +1,134 @@
+.how-to-use-block {
+    background-color: ghostwhite;
+    height: 50vh;
+    min-height: 600px;
+    text-align: center;
+}
+
+.how-to-use-block header {
+    padding-top: 50px;
+}
+
+.how-to-use-block__title {
+    font-size: 42px;
+}
+
+.how-to-use-block__steps {
+    display: flex;
+    justify-content: center;
+    margin-top: 100px;
+}
+
+
+.how-to-use-block__step {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 25px;
+}
+
+.how-to-use-block__step__line {
+    width: 180px;
+    height: 15%;
+    margin-right: -40px;
+    margin-left: -40px;
+    border-bottom: 3px solid var(--accent-color);
+}
+
+.how-to-use-block__step__number {
+    /*background-color: var(--accent-color);*/
+    /*color: ghostwhite;*/
+    color: var(--accent-color);
+    width: 80px;
+    height: 80px;
+    border: 3px solid var(--accent-color);
+    border-radius: 50%;
+    margin-top: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 50px;
+}
+
+.how-to-use-block__step h2{
+    font-size: 20px;
+    max-width: 250px;
+}
+
+.how-to-use-block__step p{
+    font-size: 16px;
+    width: 250px;
+}
+
+@media screen and (max-width: 1200px){
+    .how-to-use-block__title {
+      font-size: 38px;
+    }
+    .how-to-use-block__step p {
+        font-size: 18px;
+    }
+}
+
+@media screen and (max-width: 1024px){
+    .how-to-use-block__title {
+        font-size: 30px;
+    }
+    .how-to-use-block__step h2{
+        font-size: 20px;
+        max-width: 250px;
+    }
+
+    .how-to-use-block__step p{
+        font-size: 16px;
+        width: 250px;
+
+    }
+}
+
+@media screen and (max-width: 768px) {
+    .how-to-use-block__step__line {
+        width: 120px;
+    }
+    .how-to-use-block__step p {
+        font-size: 14px;
+        max-width: 220px;
+    }
+    .how-to-use-block__step h2 {
+        font-size: 16px;
+        max-width: 220px;
+    }
+}
+
+@media screen and (max-width: 640px) {
+    .how-to-use-block header {
+        margin-top: 0;
+        padding: 0;
+    }
+    .how-to-use-block {
+        height: 100%;
+        padding: 50px 0;
+        /*padding: 30px ;*/
+    }
+    .how-to-use-block__title {
+        font-size: 30px;
+        /*margin-bottom: 30px;*/
+    }
+    .how-to-use-block__step {
+        gap: 15px;
+    }
+    .how-to-use-block__step p {
+        font-size: 16px;
+    }
+    .how-to-use-block__steps {
+        flex-direction: column;
+        align-items: center;
+        gap: 30px;
+        margin-top: 50px;
+    }
+    .how-to-use-block__step__line {
+        width: 0;
+    }
+}
+
+
+

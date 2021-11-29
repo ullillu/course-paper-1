@@ -13,10 +13,21 @@
                 "Театр": true
             },
             "url": "/CHMR",
-            "description": "Черемушки — завершенный микрорайон. Здесь мало свободной земли, пригодной для строительства высотных зданий. В настоящий момент на ЧМР ведется строительство жилых комплексов по ул. Чехова: \"Чистые Пруды\", \"Черемушки\". Кроме того, мелкие частные застройщики ведут активное строительство двух- и трехэтажных многоквартирных домов, выкупая под них небольшие участки в частном секторе. Так как Черемушки старый микрорайон, который строился еще в советское время, здесь есть вся инфраструктура. Множество детских садов школ, магазинов. Здесь расположен Кубанский государственный университет и другие учебные заведения, парк \"Солнечный остров\", магазины, рынки и многое другое.",
-            "pros": "Карасунские озера, набережная реки Кубань, много зелени, трамвай.",
-            "cons": "большой поток транспорта, промышленные предприятия, множество хрущевок и большой частный сектор.",
-            "images": ["https://dvnak.ru/upload/000/u1/42/8b/14299861283000august.jpg", "https://dvnak.ru/upload/007/u787/d9/2e/krasnodar-chmr-mikro-raion-cheremushki-zhk-chistye-prudy.jpg", "https://dvnak.ru/upload/007/u787/3f/22/krasnodar-chmr-mikro-raion-cheremushki-zhk-cheremushki.jpg", "https://pikato.ru/upload/iblock/1e7/1e7ac45bdda5ef730e59822ef0524a19.jpg","https://avatars.mds.yandex.net/get-zen_doc/1708265/pub_5f27e004be63e00d2c62e098_5f27e18b9bdd372636f4842e/scale_1200"]
+            "description": "Микрорайон Черемушки (ЧМР) расположен в южной части Краснодара, между районом старого Центра и Гидростроем. Здесь обширный частный сектор, большое количество пятиэтажных \"хрущевок\". Локация также интересна обилием зеленых зон, кроме того, Черемушки «пересекает» цепь Карасунских озер.",
+            "pros": ["Карасунские озера", "Набережная реки Кубань", "Много зелени", "Трамвай"],
+            "cons": ["Большой поток транспорта", "Промышленные предприятия", "Множество хрущевок", "Большой частный сектор"],
+            "images": [
+                "https://dvnak.ru/upload/000/u1/42/8b/14299861283000august.jpg",
+                "https://www.ayax.ru/upload/iblock/1a5/1a53f29420d09b3ccf0d682790cfa517.jpg",
+                "https://moreon-invest.ru/upload/iblock/a6a/a6a6ca82c80196e2ee16b7d10c656923.jpg",
+                "https://dvnak.ru/upload/007/u787/d9/2e/krasnodar-chmr-mikro-raion-cheremushki-zhk-chistye-prudy.jpg",
+                "https://dvnak.ru/upload/007/u787/3f/22/krasnodar-chmr-mikro-raion-cheremushki-zhk-cheremushki.jpg"
+            ],
+            "infrastructure": " Так как Черемушки старый микрорайон, который строился еще в советское время, здесь есть вся инфраструктура - множество детских садов, школ, магазинов. Именно здесь, на Ставропольской, находится крупнейший вуз региона – Кубанский госуниверситет. От Черемушек рукой подать до центра, до крупных ТРЦ и кинотеатров (SBS Megamall, «Галактика»), до Горпарка и «Солнечного острова».",
+            "center": [
+                45.01390209974489,
+                39.016164211149885
+            ]
         },
         "geometry": {
             "type": "Polygon",
@@ -346,9 +357,14 @@
             },
             "url": "/TEC",
             "description": "",
-            "pros": "",
-            "cons": "",
-            "images": []
+            "pros": [],
+            "cons": [],
+            "images": [],
+            "infrastructure": "",
+            "center": [
+                45.01938113454365,
+                39.05890789401129
+            ]
         },
         "geometry": {
             "type": "Polygon",
@@ -438,9 +454,14 @@
             },
             "url": "/HBK",
             "description": "",
-            "pros": "",
-            "cons": "",
-            "images": []
+            "pros": [],
+            "cons": [],
+            "images": [],
+            "infrastructure": "",
+            "center": [
+                45.03033762148092,
+                39.04551830660898
+            ]
         },
         "geometry": {
             "type": "Polygon",
@@ -522,9 +543,14 @@
             },
             "url": "/KSK",
             "description": "",
-            "pros": "",
-            "cons": "",
-            "images": []
+            "pros": [],
+            "cons": [],
+            "images": [],
+            "infrastructure": "",
+            "center": [
+                45.03192493851724,
+                39.06976440079174
+            ]
         },
         "geometry": {
             "type": "Polygon",
@@ -650,9 +676,14 @@
             },
             "url": "/KMR",
             "description": "",
-            "pros": "",
-            "cons": "",
-            "images": []
+            "pros": [],
+            "cons": [],
+            "images": [],
+            "infrastructure": "",
+            "center": [
+                45.03618510510065,
+                39.09242370254995
+            ]
         },
         "geometry": {
             "type": "Polygon",
@@ -794,9 +825,14 @@
             },
             "url": "/GMR",
             "description": "",
-            "pros": "",
-            "cons": "",
-            "images": []
+            "pros": [],
+            "cons": [],
+            "images": [],
+            "infrastructure": "",
+            "center": [
+                45.000139919184825,
+                39.074919574646614
+            ]
         },
         "geometry": {
             "type": "Polygon",
@@ -998,9 +1034,14 @@
             },
             "url": "/PMR",
             "description": "",
-            "pros": "",
-            "cons": "",
-            "images": []
+            "pros": [],
+            "cons": [],
+            "images": [],
+            "infrastructure": "",
+            "center": [
+                45.01993982432416,
+                39.10701624790647
+            ]
         },
         "geometry": {
             "type": "Polygon",
@@ -1330,9 +1371,14 @@
             },
             "url": "/SHMR",
             "description": "",
-            "pros": "",
-            "cons": "",
-            "images": []
+            "pros": [],
+            "cons": [],
+            "images": [],
+            "infrastructure": "",
+            "center": [
+                45.03581507375726,
+                39.01427593600332
+            ]
         },
         "geometry": {
             "type": "Polygon",
@@ -1442,9 +1488,14 @@
             },
             "url": "/Tabachka",
             "description": "",
-            "pros": "",
-            "cons": "",
-            "images": []
+            "pros": [],
+            "cons": [],
+            "images": [],
+            "infrastructure": "",
+            "center": [
+                45.04542976772808,
+                39.0070661581715
+            ]
         },
         "geometry": {
             "type": "Polygon",
@@ -1594,9 +1645,14 @@
             },
             "url": "/ZIP",
             "description": "",
-            "pros": "",
-            "cons": "",
-            "images": []
+            "pros": [],
+            "cons": [],
+            "images": [],
+            "infrastructure": "",
+            "center": [
+                45.06185479041455,
+                38.997500293641636
+            ]
         },
         "geometry": {
             "type": "Polygon",
@@ -1678,9 +1734,14 @@
             },
             "url": "/40letPobedy",
             "description": "",
-            "pros": "",
-            "cons": "",
-            "images": []
+            "pros": [],
+            "cons": [],
+            "images": [],
+            "infrastructure": "",
+            "center": [
+                45.052607914908215,
+                38.99698530951009
+            ]
         },
         "geometry": {
             "type": "Polygon",
@@ -1818,9 +1879,14 @@
             },
             "url": "/KozhZavod",
             "description": "",
-            "pros": "",
-            "cons": "",
-            "images": []
+            "pros": [],
+            "cons": [],
+            "images": [],
+            "infrastructure": "",
+            "center": [
+                45.04044495305992,
+                38.939473415684475
+            ]
         },
         "geometry": {
             "type": "Polygon",
@@ -1934,9 +2000,14 @@
             },
             "url": "/UMR",
             "description": "",
-            "pros": "",
-            "cons": "",
-            "images": []
+            "pros": [],
+            "cons": [],
+            "images": [],
+            "infrastructure": "",
+            "center": [
+                45.0321634977664,
+                38.90887585055393
+            ]
         },
         "geometry": {
             "type": "Polygon",
@@ -2110,9 +2181,14 @@
             },
             "url": "/SHI",
             "description": "",
-            "pros": "",
-            "cons": "",
-            "images": []
+            "pros": [],
+            "cons": [],
+            "images": [],
+            "infrastructure": "",
+            "center": [
+                45.047741920846974,
+                38.91848888766344
+            ]
         },
         "geometry": {
             "type": "Polygon",
@@ -2234,9 +2310,14 @@
             },
             "url": "/MHG",
             "description": "",
-            "pros": "",
-            "cons": "",
-            "images": []
+            "pros": [],
+            "cons": [],
+            "images": [],
+            "infrastructure": "",
+            "center": [
+                45.059859567399265,
+                38.90634409824837
+            ]
         },
         "geometry": {
             "type": "Polygon",
@@ -2306,9 +2387,14 @@
             },
             "url": "/CMR",
             "description": "",
-            "pros": "",
-            "cons": "",
-            "images": []
+            "pros": [],
+            "cons": [],
+            "images": [],
+            "infrastructure": "",
+            "center": [
+                45.031066591149056,
+                38.976042621522616
+            ]
         },
         "geometry": {
             "type": "Polygon",
@@ -2622,9 +2708,14 @@
             },
             "url": "/SMR",
             "description": "",
-            "pros": "",
-            "cons": "",
-            "images": []
+            "pros": [],
+            "cons": [],
+            "images": [],
+            "infrastructure": "",
+            "center": [
+                45.07110154768229,
+                38.919003871794565
+            ]
         },
         "geometry": {
             "type": "Polygon",
@@ -2742,9 +2833,14 @@
             },
             "url": "/FMR",
             "description": "",
-            "pros": "",
-            "cons": "",
-            "images": []
+            "pros": [],
+            "cons": [],
+            "images": [],
+            "infrastructure": "",
+            "center": [
+                45.061246489162954,
+                38.94892012396415
+            ]
         },
         "geometry": {
             "type": "Polygon",
@@ -2882,9 +2978,14 @@
             },
             "url": "/Aviagorodok",
             "description": "",
-            "pros": "",
-            "cons": "",
-            "images": []
+            "pros": [],
+            "cons": [],
+            "images": [],
+            "infrastructure": "",
+            "center": [
+                45.080100787254736,
+                38.96179472723443
+            ]
         },
         "geometry": {
             "type": "Polygon",
@@ -2954,9 +3055,14 @@
             },
             "url": "/KKB",
             "description": "",
-            "pros": "",
-            "cons": "",
-            "images": []
+            "pros": [],
+            "cons": [],
+            "images": [],
+            "infrastructure": "",
+            "center": [
+                45.0612160744328,
+                39.02603899755991
+            ]
         },
         "geometry": {
             "type": "Polygon",
@@ -3058,9 +3164,14 @@
             },
             "url": "/RIP",
             "description": "",
-            "pros": "",
-            "cons": "",
-            "images": []
+            "pros": [],
+            "cons": [],
+            "images": [],
+            "infrastructure": "",
+            "center": [
+                45.091167166758396,
+                39.002306812195656
+            ]
         },
         "geometry": {
             "type": "Polygon",
@@ -3182,9 +3293,14 @@
             },
             "url": "/Enka",
             "description": "",
-            "pros": "",
-            "cons": "",
-            "images": []
+            "pros": [],
+            "cons": [],
+            "images": [],
+            "infrastructure": "",
+            "center": [
+                45.102354345879995,
+                38.95591106783933
+            ]
         },
         "geometry": {
             "type": "Polygon",
@@ -3234,9 +3350,14 @@
             },
             "url": "/VMR",
             "description": "",
-            "pros": "",
-            "cons": "",
-            "images": []
+            "pros": [],
+            "cons": [],
+            "images": [],
+            "infrastructure": "",
+            "center": [
+                45.147848490285256,
+                38.98790871420283
+            ]
         },
         "geometry": {
             "type": "Polygon",
@@ -3298,9 +3419,14 @@
             },
             "url": "/NemetskayaDerevnya",
             "description": "",
-            "pros": "",
-            "cons": "",
-            "images": []
+            "pros": [],
+            "cons": [],
+            "images": [],
+            "infrastructure": "",
+            "center": [
+                45.124960980539434,
+                38.91733443060384
+            ]
         },
         "geometry": {
             "type": "Polygon",
@@ -3370,9 +3496,14 @@
             },
             "url": "/9km",
             "description": "",
-            "pros": "",
-            "cons": "",
-            "images": []
+            "pros": [],
+            "cons": [],
+            "images": [],
+            "infrastructure": "",
+            "center": [
+                45.08460056446046,
+                38.978102558045
+            ]
         },
         "geometry": {
             "type": "Polygon",
@@ -3430,9 +3561,14 @@
             },
             "url": "/Severnyi",
             "description": "",
-            "pros": "",
-            "cons": "",
-            "images": []
+            "pros": [],
+            "cons": [],
+            "images": [],
+            "infrastructure": "",
+            "center": [
+                45.127634450856235,
+                38.97324837768734
+            ]
         },
         "geometry": {
             "type": "Polygon",
@@ -3542,9 +3678,14 @@
             },
             "url": "/Gorhutor",
             "description": "",
-            "pros": "",
-            "cons": "",
-            "images": []
+            "pros": [],
+            "cons": [],
+            "images": [],
+            "infrastructure": "",
+            "center": [
+                45.102751099655116,
+                38.98470987005525
+            ]
         },
         "geometry": {
             "type": "Polygon",

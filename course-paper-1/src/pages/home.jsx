@@ -1,14 +1,14 @@
-import { MapBlock } from "../components/map-block/map-block";
+import { MapBlock } from "../components/home-page-blocks/map-block/map-block";
 import { useEffect, useState } from "react";
-import { filterInfo } from "../components/map-block";
+import { filterInfo } from "../components/home-page-blocks/map-block";
 import axios from "axios";
 
 import { useNavigate } from "react-router-dom";
 
 // import geojson from '../geo-objects-info/geojson.json';
-import WelcomeBlock from "../components/welcome-block/welcome-block";
-import HowToUseBlock from "../components/how-to-use-block/how-to-use-block";
-import AboutUsBlock from "../components/about-us-block/about-us-block";
+import WelcomeBlock from "../components/home-page-blocks/welcome-block/welcome-block";
+import HowToUseBlock from "../components/home-page-blocks/how-to-use-block/how-to-use-block";
+import AboutUsBlock from "../components/home-page-blocks/about-us-block/about-us-block";
 
 export const Home = ( props ) => {
     const [filter, setFilter] = useState( filterInfo );

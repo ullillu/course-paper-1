@@ -1,10 +1,14 @@
 @import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@100;300;400;500;600;700&display=swap');
+:root {
+  --accent-color: #ffcf48;
+}
 
 body {
   margin: 0;
   font-family: 'Montserrat', serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
+
 }
 
 code {
@@ -12,23 +16,36 @@ code {
     monospace;
 }
 
-h1, p {
+h1, h2, p {
   margin: 0;
 }
 
+.title {
+  font-size: 42px;
+}
 
-/*.ymaps-2-1-79-listbox__list-item {*/
-/*  display: flex !important;*/
-/*  align-items: center;*/
-/*  min-height: 20px;*/
-/*}*/
-/*.ymaps-2-1-79-listbox__list-item-text {*/
-/*}*/
+.description {
+  font-size: 20px;
+}
 
-/*.park {*/
-/*}*/
+@media screen and (max-width: 1200px){
+  .title {
+    font-size: 38px;
+  }
+  .description {
+    font-size: 18px;
+  }
 
-/*.ymaps-2-1-79-listbox__list-item::after {*/
-/*  content: url("components/map-block/icons/parks.svg");*/
-/*}*/
+}
 
+@media screen and (max-width: 1024px) {
+  .title {
+    font-size: 30px;
+  }
+}
+
+@media screen and (max-width: 640px) {
+  .description {
+    font-size: 16px;
+  }
+}
